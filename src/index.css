@@ -1,0 +1,41 @@
+#mountNode {
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul {
+	display: flex;
+  flex-flow: column nowrap;
+  list-style: none;
+  padding-left: 0;
+}
+
+.todo-item {
+	display: flex;
+	flex-flow: row nowrap;
+  align-items: center;
+  div {
+  	margin: 5px;
+  }
+}
+
+.todo-item-hidden {
+	display: none;
+}
+
+h1 {
+	display: flex;
+  justify-content: center;
+}
+
+.done {
+	text-decoration-line: line-through;
+}

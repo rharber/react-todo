@@ -30,8 +30,8 @@ class TodoItem extends React.Component {
  	render() {
   	return (
     	<div className={this.props.shouldShow ? 'todo-item' : 'todo-item-hidden'}>
-        <input type='checkbox' onClick={this.props.handleClick}
-        checked={this.props.completed ? 'true' : ''}/>
+        <input className='check-box' type='checkbox' onClick={this.props.handleClick}
+          checked={this.props.completed ? 'true' : ''}/>
         <div className={this.props.completed ? 'done' : 'active'}>{this.props.text}</div>
       </div>
     )
@@ -72,7 +72,7 @@ class App extends React.Component {
 
   state = {
     todos: [{ text: 'First todo item', completed: false }],
-    value: null,
+    value: '',
     filter: 'all'
   }
 
@@ -102,7 +102,7 @@ class App extends React.Component {
 
   render() {
   	return (
-    	<div>
+    	<div className='app-container'>
       	<h1>Todo App</h1>
         <AddTodo
         	handleClick={this.addTodoItem}
@@ -112,7 +112,7 @@ class App extends React.Component {
         	list={this.state.todos}
           toggleItem={this.toggleItem}
           filter={this.state.filter} />
-				<div class='footer'>
+				<div className='footer'>
           <Button handleClick={this.showAll} label='All' />
           <Button handleClick={this.showActive} label='Active' />
           <Button handleClick={this.showDone} label='Done' />

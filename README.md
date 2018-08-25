@@ -8,6 +8,7 @@ Type something into the input form and click the `+` button to add the item to y
 Click the check box next to a todo item to complete it. Completed items are checked with strikethrough text.
 
 ### Filter Items
+- Click the `All` button to show both completed and incomplete todo list items. (Default behavior)
 - Click the `Active` button to show only the incomplete todo list items.
 - Click the `Done` button to show only the completed todo list items.
 
